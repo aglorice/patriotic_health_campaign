@@ -18,14 +18,14 @@ const routes = [
 	{
 		path: '/home',
 		component: Home,
-		mate: {
+		meta: {
 			title: '首页'
 		}
 	},
 	{
 		path: '/activity_introduction',
 		component: ActivityIntroduction,
-		mate: {
+		meta: {
 			title: '活动介绍'
 		}
 	},
@@ -33,35 +33,35 @@ const routes = [
 		path: '/activity_publicity',
 		component: ActivityPublicity,
 		redirect: '/activity_publicity/personal_hygiene',
-		mate: {
+		meta: {
 			title: '活动宣传'
 		},
 		children: [
 			{
 				path: 'personal_hygiene',
 				component: PersonalHygiene,
-				mate: {
+				meta: {
 					title: '个人卫生'
 				}
 			},
 			{
 				path: 'environmental_hygiene',
 				component: EnvironmentalHygiene,
-				mate: {
+				meta: {
 					title: '环境卫生'
 				}
 			},
 			{
 				path: 'food_safety',
 				component: FoodSafety,
-				mate: {
+				meta: {
 					title: '食品安全'
 				}
 			},
 			{
 				path: 'disease_prevention',
 				component: DiseasePrevention,
-				mate: {
+				meta: {
 					title: '疾病预防'
 				}
 			}
