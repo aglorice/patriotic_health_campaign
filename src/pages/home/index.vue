@@ -7,7 +7,7 @@
 					<span class="icon animated">
 						<img src="@/assets/icon/home.jpg" alt="">
 					</span>
-					<p>主页</p>
+					<p class="links_p">主页</p>
 					<span class="enter_bottom">点击进入</span>
 					<router-link class="home_a" to="/home"></router-link>
 				</li>
@@ -15,7 +15,7 @@
 					<span class="icon animate">
 						<img src="@/assets/icon/home.jpg" alt="">
 					</span>
-					<p>活动介绍</p>
+					<p class="links_p">活动介绍</p>
 					<span class="enter_bottom">点击进入</span>
 					<router-link class="home_a" to="/activity_publicity"></router-link>
 				</li>
@@ -23,7 +23,7 @@
 					<span class="icon animate">
 						<img src="@/assets/icon/home.jpg" alt="">
 					</span>
-					<p>活动宣传</p>
+					<p class="links_p">活动宣传</p>
 					<span class="enter_bottom">点击进入</span>
 					<router-link class="home_a" to="/activity_publicity"></router-link>
 				</li>
@@ -31,7 +31,7 @@
 					<span class="icon animate">
 						<img src="@/assets/icon/home.jpg" alt="">
 					</span>
-					<p>互动交流</p>
+					<p class="links_p">互动交流</p>
 					<span class="enter_bottom">点击进入</span>
 					<router-link class="home_a" to="/activity_publicity"></router-link>
 				</li>
@@ -39,7 +39,7 @@
 					<span class="icon animate">
 						<img src="@/assets/icon/home.jpg" alt="">
 					</span>
-					<p>成果展示</p>
+					<p class="links_p">成果展示</p>
 					<span class="enter_bottom">点击进入</span>
 					<router-link class="home_a" to="/activity_publicity"></router-link>
 				</li>
@@ -133,7 +133,7 @@ ul {
 	transform: scale(1.1);
 }
 .l1 {
-	background-color: #2c4929;
+	background-color: #498044;
 }
 .l2 {
 	top:70px;
@@ -145,11 +145,11 @@ ul {
 }
 .l4 {
 	top:90px;
-	background-color: #ff4900;
+	background-color: #e5835a;
 }
 .l5 {
 	top:-20px;
-	background-color: #9c9d54;
+	background-color: #0c8d3b;
 
 }
 /*导航卡片logo*/
@@ -162,9 +162,16 @@ ul {
 }
 /*导航卡片logo*/
 .icon img {
-	margin-top: 10px;
+	margin-top: 20px;
 	display: block;
 	width: 100%;
+}
+/*导航卡片文字*/
+.links_p {
+	width: auto;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: "等线 Light";
 }
 
 
