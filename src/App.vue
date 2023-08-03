@@ -19,6 +19,11 @@ export default {
 
 <style>
 @import "@/style/normalize.css";
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
 /*调整过渡动画的持续时间*/
 /*
   页面进入的动画
