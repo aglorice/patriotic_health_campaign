@@ -95,7 +95,8 @@ ul {
 	top: 50%;
 	left: 0;
 	text-align: center;
-	transform: translateY(-10vh) translateX(10vw);
+	transform: translateY(-10vh);
+	right: 0;
 
 }
 /*导航卡片链接*/
