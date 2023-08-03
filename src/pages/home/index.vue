@@ -5,7 +5,7 @@
 			<ul class="links">
 				<li class="l1">
 					<span class="icon animated">
-						<img src="@/assets/icon/home.jpg">
+						<img src="@/assets/icon/home.jpg" alt="">
 					</span>
 					<p>主页</p>
 					<span class="enter_bottom">点击进入</span>
@@ -13,7 +13,7 @@
 				</li>
 				<li class="l2">
 					<span class="icon animate">
-						<img src="@/assets/icon/home.jpg">
+						<img src="@/assets/icon/home.jpg" alt="">
 					</span>
 					<p>活动介绍</p>
 					<span class="enter_bottom">点击进入</span>
@@ -21,7 +21,7 @@
 				</li>
 				<li class="l3">
 					<span class="icon animate">
-						<img src="@/assets/icon/home.jpg">
+						<img src="@/assets/icon/home.jpg" alt="">
 					</span>
 					<p>活动宣传</p>
 					<span class="enter_bottom">点击进入</span>
@@ -29,7 +29,7 @@
 				</li>
 				<li class="l4">
 					<span class="icon animate">
-						<img src="@/assets/icon/home.jpg">
+						<img src="@/assets/icon/home.jpg" alt="">
 					</span>
 					<p>互动交流</p>
 					<span class="enter_bottom">点击进入</span>
@@ -37,7 +37,7 @@
 				</li>
 				<li class="l5">
 					<span class="icon animate">
-						<img src="@/assets/icon/home.jpg">
+						<img src="@/assets/icon/home.jpg" alt="">
 					</span>
 					<p>成果展示</p>
 					<span class="enter_bottom">点击进入</span>
