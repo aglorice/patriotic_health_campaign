@@ -22,8 +22,14 @@ export default {
 @import "@/style/normalize.css";
 /*引入页面切换动画*/
 @import "@/style/animation.css";
+/*全局字体样式*/
+body {
+	font-family: "SourceSansPro-Regular", "微软雅黑", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+}
 .container {
 	width: 1200px;
 	margin: 0 auto;
 }
+
 </style>
