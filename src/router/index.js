@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-const Home = ()=> import ("@/pages/home/home_page");
+const Home = ()=> import ("@/pages/home");
 const ActivityIntroduction = ()=> import ("@/pages/activity_introduction");
 const ActivityPublicity = ()=> import ("@/pages/activity_publicity");
 Vue.use(VueRouter);
