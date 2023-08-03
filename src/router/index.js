@@ -1,8 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-const ActivityIntroduction = ()=> import ("@/pages/activity_introduction");
 const Home = ()=> import ("@/pages/home/home_page");
+const ActivityIntroduction = ()=> import ("@/pages/activity_introduction");
+const ActivityPublicity = ()=> import ("@/pages/activity_publicity");
 Vue.use(VueRouter);
 
 const routes = [
@@ -22,6 +23,13 @@ const routes = [
 		component: ActivityIntroduction,
 		mate:{
 			title: '活动介绍'
+		}
+	},
+	{
+		path: '/activity_publicity',
+		component: ActivityPublicity,
+		mate:{
+			title: '活动宣传'
 		}
 	}
 ]

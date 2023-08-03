@@ -1,26 +1,19 @@
 <template>
 	<div id="app">
-<!--    <home_page></home_page>-->
-    <transition :name="transitionName" mode="out-in">
-      <keep-alive>
-        <router-view></router-view>
-      </keep-alive>
-    </transition>
+		<transition :name="transitionName" mode="out-in">
+			<router-view></router-view>
+		</transition>
 	</div>
 </template>
 
 <script>
-// import home_page from "@/pages/home/home_page.vue";
-
 export default {
-
 	name: 'App',
-  data(){
-    return{
-      transitionName:'slide-left'
-    }
-  },
-	// components: {home_page}
+	data() {
+		return {
+			transitionName: 'slide-left'
+		}
+	},
 }
 </script>
 
