@@ -18,30 +18,12 @@ export default {
 </script>
 
 <style>
+/*引入初始化样式*/
 @import "@/style/normalize.css";
-
+/*引入页面切换动画*/
+@import "@/style/animation.css";
 .container {
 	width: 1200px;
 	margin: 0 auto;
-}
-/*调整过渡动画的持续时间*/
-/*
-  页面进入的动画
-*/
-.slide-left-enter {
-	opacity: 0;
-	-webkit-transform: translate(0px, 30px);
-	transform: translate(0px, 30px);
-}
-.slide-left-enter-active{
-	transition: all .5s ease;
-}
-.slide-left-leave-to{
-	opacity: 0;
-	-webkit-transform: translate(0px, -30px);
-	transform: translate(0px, -30px);
-}
-.slide-left-leave-active {
-	transition: all .5s ease;
 }
 </style>
