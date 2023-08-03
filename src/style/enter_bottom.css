@@ -1,0 +1,10 @@
+.enter_bottom {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+}
