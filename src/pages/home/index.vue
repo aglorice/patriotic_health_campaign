@@ -1,24 +1,24 @@
 <template>
-  <div>
-    <h1>HomePage</h1>
-    <!--  导航栏-->
-    <NavigationBar/>
-  </div>
+	<div>
+		<h1>HomePage</h1>
+		<!--  导航栏-->
+		<NavigationBar/>
+	</div>
 </template>
 
 <script>
-import navigation_bar from "@/components/navigation_bar";
+import NavigationBar from "@/components/navigation_bar";
 
 export default {
-  name: 'HomePage',
-  components: {
-    NavigationBar:navigation_bar
-  }
+	name: 'HomePage',
+	components: {
+		NavigationBar
+	}
 }
 </script>
 
 <style scoped>
 a {
-  margin: 5px;
+	margin: 5px;
 }
 </style>

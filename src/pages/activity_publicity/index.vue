@@ -1,8 +1,8 @@
 <template>
-<!--活动宣传-->
-<div>
-	<h1>ActivityPublicity</h1>
-</div>
+	<!--活动宣传-->
+	<div>
+		<h1>ActivityPublicity</h1>
+	</div>
 </template>
 
 <script>
