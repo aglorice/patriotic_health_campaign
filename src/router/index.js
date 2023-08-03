@@ -2,12 +2,27 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 const ActivityIntroduction = ()=> import ("@/pages/activity_introduction");
+const Home = ()=> import ("@/pages/home/home_page");
 Vue.use(VueRouter);
 
 const routes = [
 	{
+		path: '',
+		redirect: '/home',
+	},
+	{
+		path: '/home',
+		component: Home,
+		mate:{
+			title: '首页'
+		}
+	},
+	{
 		path: '/activity_introduction',
-		component: ActivityIntroduction
+		component: ActivityIntroduction,
+		mate:{
+			title: '活动介绍'
+		}
 	}
 ]
 
