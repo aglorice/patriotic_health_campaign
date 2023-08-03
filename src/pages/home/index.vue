@@ -51,7 +51,7 @@
 				</li>
 			</ul>
 			<div class="home_bottom">
-					<p>本项目由vue<img src="@/assets/logo.png">驱动</p>
+					<p>本项目由 Vue<img src="@/assets/logo.png">驱动</p>
 				<p>Copyright 2020-2023 关于我们 | 隐私条款 | 联系方式</p>
 			</div>
 		</div>
