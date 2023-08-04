@@ -8,6 +8,10 @@ const ActivityIntroduction = () => import ("@/pages/activity_introduction");
 const ActivityPublicity = () => import ("@/pages/activity_publicity");
 // 导航页面
 const RootPage = () => import ("@/pages/root_page");
+// 互动页面
+const  InteractionPage = () => import ("@/pages/interaction");
+// 成果展示页面
+const ResultShow = () => import ("@/pages/results_show");
 Vue.use(VueRouter);
 
 const routes = [
@@ -37,6 +41,20 @@ const routes = [
 		component: ActivityPublicity,
 		meta: {
 			title: '活动宣传'
+		}
+	},
+	{
+		path: '/interaction',
+		component: InteractionPage,
+		meta: {
+			title: '互动页面'
+		}
+	},
+	{
+		path: '/results_show',
+		component: ResultShow,
+		meta: {
+			title: '成果展示'
 		}
 	}
 ]
