@@ -23,7 +23,7 @@
 					</span>
 					<p class="links_p">活动介绍</p>
 					<span class="enter_bottom">点击进入</span>
-					<router-link class="home_a" to="/activity_publicity"></router-link>
+					<router-link class="home_a" to="/activity_introduction"></router-link>
 				</li>
 				<li class="l3">
 					<span class="icon animate">
@@ -39,7 +39,7 @@
 					</span>
 					<p class="links_p">互动交流</p>
 					<span class="enter_bottom">点击进入</span>
-					<router-link class="home_a" to="/activity_publicity"></router-link>
+					<router-link class="home_a" to="/interaction"></router-link>
 				</li>
 				<li class="l5">
 					<span class="icon animate">
@@ -47,7 +47,7 @@
 					</span>
 					<p class="links_p">成果展示</p>
 					<span class="enter_bottom">点击进入</span>
-					<router-link class="home_a" to="/activity_publicity"></router-link>
+					<router-link class="home_a" to="/results_show"></router-link>
 				</li>
 			</ul>
 			<div class="home_bottom">
