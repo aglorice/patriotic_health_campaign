@@ -2,6 +2,7 @@
 	<!--活动宣传-->
 	<div>
 		<!--顶部导航栏-->
+		<NavigationBar/>
 		<ul class="nav">
 			<li><span @click="activeFlag = 0" :class="{active:activeFlag === 0}">个人卫生</span></li>
 			<li><span @click="activeFlag = 1" :class="{active:activeFlag === 1}">环境卫生</span></li>
@@ -44,6 +45,7 @@
 </template>
 
 <script>
+import NavigationBar from '@/components/navigation_bar.vue'
 export default {
 	name: 'ActivityPublicity',
 	data() {
@@ -53,6 +55,9 @@ export default {
 			//导航栏激活标志
 			activeFlag: 0
 		}
+	},
+	components: {
+		NavigationBar
 	},
 }
 </script>
