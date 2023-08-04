@@ -64,6 +64,7 @@ export default {
 	transition: 1s;
 }
 .navigation_bar {
+	z-index: 100;
 	top:0;
 	position: absolute;
 	display: flex;
@@ -76,27 +77,23 @@ export default {
 }
 
 .logo {
-	margin-left: 200px;
-	display: inline-block;
+	flex: 3;
 }
 
 .logo img {
 	width: 6vh;
 	height: 6vh;
 	margin-top: 1vh;
+	margin-left: 100px;
 }
 
 .navigation_ul {
-	flex: 1;
+	flex: 7;
 	list-style: none;
 	display: inline-block;
 	padding: 0;
 }
 
-/*选中第一个子元素*/
-.li:nth-child(1) {
-	margin-left: 100px;
-}
 
 .li {
 	display: inline-block;
@@ -104,15 +101,15 @@ export default {
 	height: 39.3px;
 	text-align: center;
 	background-color: #ffffff;
-	margin-right: 20px;
-	border-radius: 15px;
+	border: 1px #89eccf outset;
+	margin-right: 30px;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, .1),
 	0 2px 4px rgba(0, 0, 0, .1);
 
 }
 
 .li:hover {
-	background-color: #addcee;
+	background-color: #4593a4;
 }
 
 .li a {
@@ -121,9 +118,11 @@ export default {
 	color: #333333;
 	font-weight: bolder;
 	letter-spacing: 0.2em;
+	transition: 0.8s;
 }
 
 li a:hover {
 	color: white;
+	letter-spacing: 0.3em!important;
 }
 </style>
