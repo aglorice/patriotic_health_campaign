@@ -70,8 +70,9 @@ export default {
 	width: 100%;
 	height: 8vh;
 	background-color: #ffffff;
-	border-bottom: 2px #919191 solid;
+	border-bottom: 1px #d3d0d0 solid;
 	opacity: .9;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, .1) ;
 }
 
 .logo {
@@ -111,7 +112,7 @@ export default {
 }
 
 .li:hover {
-	background-color: #ffffff;
+	background-color: #addcee;
 }
 
 .li a {
@@ -119,10 +120,10 @@ export default {
 	line-height: 39.3px;
 	color: #333333;
 	font-weight: bolder;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.2em;
 }
 
 li a:hover {
-	color: skyblue;
+	color: white;
 }
 </style>
