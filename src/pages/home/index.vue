@@ -19,7 +19,7 @@ export default {
 		return{
 			images:[
 					"https://aglorice.cn/img/index.97db8b1b.png",
-					"https://aglorice.cn/img/index.97db8b1b.png",
+					"https://aglorice.cn/img/category.629a2b54.png",
 			]
 		}
 	},
