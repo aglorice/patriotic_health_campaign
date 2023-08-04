@@ -142,11 +142,11 @@ ul {
 	transform: scale(1.1);
 }
 .l1 {
-	background-color: #075701;
+	background-color: #029ead;
 }
 .l2 {
 	top:70px;
-	background-color: #600202;
+	background-color: #830101;
 }
 .l3 {
 	top:-40px;
