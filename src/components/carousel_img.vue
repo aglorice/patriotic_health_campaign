@@ -63,7 +63,7 @@ export default {
 <style scoped>
 .swiper-container {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	z-index: 0;
 	/*修改导航和分页器的颜色*/
 	--swiper-theme-color: #2bccc7;

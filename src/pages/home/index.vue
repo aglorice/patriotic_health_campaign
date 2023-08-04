@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<NavigationBar/>
-		<div class="test">
+		<div class="swiper_home">
 			<CarouselImg :images="images" />
 		</div>
 		<div>
@@ -31,7 +31,8 @@ export default {
 </script>
 
 <style scoped>
-.test {
-
+.swiper_home {
+	width: 100vw;
+	height: 80vh;
 }
 </style>
