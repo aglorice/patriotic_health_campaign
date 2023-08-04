@@ -2,7 +2,7 @@
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide" v-for="(img, index) in images" :key="index">
-				<img :src="img" alt="img">
+				<img class="swiper-img" :src="img" alt="img">
 			</div>
 		</div>
 		<!-- 如果需要分页器 -->
@@ -25,27 +25,21 @@ export default {
 		let mySwiper = new Swiper('.swiper-container', {
 			//循环播放
 			loop: true,
-
 			//自动播放
 			autoplay: {
-				delay: 3000, // 每次轮播间隔的ms数，默认3000ms
+				delay: 10000, // 每次轮播间隔的ms数，默认10000ms
 				stopOnLastSlide: false, // 播放完最后一张图片后是否停留在最后一张图片上，停止继续轮播。默认false
 				disableOnInteraction: false, // 用户操作轮播图后，比如点击轮播按钮或小圆点，停止自动轮播
 			},
-
 			//滚动一张或者切换一张图片，需要的时间，单位ms，默认300ms
 			// speed: 800,
-
 			// effect: 'cards',
-
 			// 如果需要分页器
 			pagination: {
 				el: '.swiper-pagination',
-
 				//点击指示点分页器会控制Swiper切换
 				clickable: true,
 			},
-
 			// 如果需要前进后退按钮
 			navigation: {
 				nextEl: '.swiper-button-next',
@@ -68,11 +62,11 @@ export default {
 
 <style scoped>
 .swiper-container {
-	width: 500px;
-	height: 400px;
-
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
 	/*修改导航和分页器的颜色*/
-	--swiper-theme-color: #01763a;
+	--swiper-theme-color: #2bccc7;
 }
 
 .swiper-slide {
@@ -80,7 +74,17 @@ export default {
 	line-height: 400px;
 	color: #b0b0b0;
 }
-
+.swiper-img {
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	/* 背景图不平铺 */
+	background-repeat: no-repeat;
+	/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+	background-attachment: fixed;
+	/* 让背景图基于容器大小伸缩 */
+	background-size: cover;
+}
 /*导航显示与隐藏动画*/
 .swiper-button-hide {
 	opacity: 0;
