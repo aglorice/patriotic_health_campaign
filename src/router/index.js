@@ -1,15 +1,22 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-
+// 主页
 const Home = () => import ("@/pages/home");
+// 活动介绍页
 const ActivityIntroduction = () => import ("@/pages/activity_introduction");
+// 活动宣传页
 const ActivityPublicity = () => import ("@/pages/activity_publicity");
+// 导航页面
+const RootPage = () => import ("@/pages/root_page");
 Vue.use(VueRouter);
 
 const routes = [
 	{
 		path: '',
-		redirect: '/home',
+		component: RootPage,
+		meta: {
+			title: '爱国卫生运动'
+		}
 	},
 	{
 		path: '/home',
