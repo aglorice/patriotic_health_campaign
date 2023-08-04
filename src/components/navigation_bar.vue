@@ -101,8 +101,8 @@ export default {
 	height: 39.3px;
 	text-align: center;
 	background-color: #ffffff;
-	border: 1px #89eccf outset;
 	margin-right: 30px;
+	border-radius: 20px;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, .1),
 	0 2px 4px rgba(0, 0, 0, .1);
 
