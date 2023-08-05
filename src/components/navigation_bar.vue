@@ -11,7 +11,8 @@
 				<router-link to="/activity_introduction">活动介绍</router-link>
 			</li>
 			<li class="li">
-				<router-link to="/activity_publicity">活动宣传</router-link>
+				<router-link to="/activity_publicity">活动宣传<span class="down"><img src="@/assets/icon/down.png" alt=""/></span>
+				</router-link>
 				<div class="items">
 					<div class="item">
 						<router-link to="/activity_publicity/personal_hygiene">个人卫生</router-link>
@@ -25,6 +26,7 @@
 					<div class="item">
 						<router-link to="/activity_publicity/disease_prevention">疾病预防</router-link>
 					</div>
+
 				</div>
 			</li>
 			<li class="li">
@@ -33,6 +35,7 @@
 			<li class="li">
 				<router-link to="/results_show">成果展示</router-link>
 			</li>
+
 		</ul>
 	</div>
 </template>
@@ -85,10 +88,7 @@ export default {
 	display: flex;
 	width: 100%;
 	height: 8vh;
-	background-color: #ffffff;
-	border-bottom: 1px #d3d0d0 solid;
-	opacity: .9;
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+	background: linear-gradient(145deg, #a20000, rgba(255, 255, 255, 0.15));
 }
 
 .logo {
@@ -103,7 +103,7 @@ export default {
 }
 
 .navigation_ul {
-	flex: 7;
+	flex: 5;
 	list-style: none;
 	display: inline-block;
 	padding: 0;
@@ -116,33 +116,37 @@ export default {
 }
 
 .li > a {
-	width: 150px;
+	width: 120px;
 	height: 39.3px;
 	text-decoration: none;
 	line-height: 39.3px;
-	color: #333333;
+	color: #020202;
 	font-weight: bolder;
 	letter-spacing: 0.2em;
 	transition: 0.8s;
 	display: inline-block;
-	border-radius: 20px;
 	text-align: center;
-	background-color: #ffffff;
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, .1),
-	0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.li > a:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: red;
 }
 
 .li > a:hover {
 	color: white;
 	letter-spacing: 0.3em !important;
-	background-color: #4593a4;
 }
 
 /*活动宣传下的子目录*/
 .items {
-	width: 150px;
+	width: 120px;
 	background-color: #ffffff;
-	border-radius: 20px;
 	position: absolute;
 	top: 40px;
 	left: 0;
@@ -151,6 +155,7 @@ export default {
 	padding: 10px;
 	box-sizing: border-box;
 }
+
 .li:hover .items {
 	display: block;
 }
@@ -176,5 +181,16 @@ export default {
 .items a:hover {
 	color: #01763a;
 	font-size: 20px;
+}
+
+.down {
+	position: absolute;
+}
+
+.down img {
+	margin-top: 9px;
+	margin-left: 4px;
+	width: 20px;
+	height: 20px;
 }
 </style>
