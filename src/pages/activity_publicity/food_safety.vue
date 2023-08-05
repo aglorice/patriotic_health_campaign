@@ -1,12 +1,10 @@
 <template>
-	<div>
-		<h1>interaction</h1>
-	</div>
+	<h1>food_safety</h1>
 </template>
 
 <script>
 export default {
-	name: "InteractionPage",
+	name: 'FoodSafety'
 }
 </script>
 

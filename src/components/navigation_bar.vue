@@ -14,16 +14,16 @@
 				<router-link to="/activity_publicity">活动宣传</router-link>
 				<div class="items">
 					<div class="item">
-						<a href="javascript:void(0);">个人卫生</a>
+						<router-link to="/activity_publicity/personal_hygiene">个人卫生</router-link>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);">环境卫生</a>
+						<router-link to="/activity_publicity/environmental_hygiene">环境卫生</router-link>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);">食品安全</a>
+						<router-link to="/activity_publicity/food_safety">食品安全</router-link>
 					</div>
 					<div class="item">
-						<a href="javascript:void(0);">疾病预防</a>
+						<router-link to="/activity_publicity/disease_prevention">疾病预防</router-link>
 					</div>
 				</div>
 			</li>

@@ -1,12 +1,10 @@
 <template>
-	<div>
-		<h1>interaction</h1>
-	</div>
+	<h1>PersonalHygiene</h1>
 </template>
 
 <script>
 export default {
-	name: "InteractionPage",
+	name: 'PersonalHygiene'
 }
 </script>
 

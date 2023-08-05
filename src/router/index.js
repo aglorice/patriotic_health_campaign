@@ -5,7 +5,14 @@ const Home = () => import ("@/pages/home");
 // 活动介绍页
 const ActivityIntroduction = () => import ("@/pages/activity_introduction");
 // 活动宣传页
-const ActivityPublicity = () => import ("@/pages/activity_publicity");
+// 个人卫生页
+const PersonalHygiene = () => import ("@/pages/activity_publicity/personal_hygiene.vue");
+// 环境卫生页
+const EnvironmentalHygiene = () => import ("@/pages/activity_publicity/environmental_hygiene.vue");
+// 食品安全页
+const FoodSafety = () => import ("@/pages/activity_publicity/food_safety.vue");
+// 疾病预防页
+const DiseasePrevention = () => import ("@/pages/activity_publicity/disease_prevention.vue");
 // 导航页面
 const RootPage = () => import ("@/pages/root_page");
 // 互动页面
@@ -38,9 +45,34 @@ const routes = [
 	},
 	{
 		path: '/activity_publicity',
-		component: ActivityPublicity,
+		redirect: '/activity_publicity/personal_hygiene'
+	},
+	{
+		path: '/activity_publicity/personal_hygiene',
+		component: PersonalHygiene,
 		meta: {
-			title: '活动宣传'
+			title: '个人卫生'
+		}
+	},
+	{
+		path: '/activity_publicity/environmental_hygiene',
+		component: EnvironmentalHygiene,
+		meta: {
+			title: '环境卫生'
+		}
+	},
+	{
+		path: '/activity_publicity/food_safety',
+		component: FoodSafety,
+		meta: {
+			title: '食品安全'
+		}
+	},
+	{
+		path: '/activity_publicity/disease_prevention',
+		component: DiseasePrevention,
+		meta: {
+			title: '疾病预防'
 		}
 	},
 	{
