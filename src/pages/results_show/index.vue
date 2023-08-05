@@ -1,16 +1,12 @@
 <template>
 	<div>
-		<NavigationBar/>
+		<h1>results_show</h1>
 	</div>
 </template>
 
 <script>
-import NavigationBar from "@/components/navigation_bar";
 export default {
 	name: "ResultsShow",
-	components:{
-		NavigationBar
-	}
 }
 </script>
 

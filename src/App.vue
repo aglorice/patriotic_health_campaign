@@ -1,5 +1,6 @@
 <template>
 	<div id="app">
+		<NavigationBar v-show="$route.path !== '/'" />
 		<transition :name="transitionName" mode="out-in">
 			<router-view></router-view>
 		</transition>
@@ -7,8 +8,11 @@
 </template>
 
 <script>
+import NavigationBar from "@/components/navigation_bar.vue";
+
 export default {
 	name: 'App',
+	components: {NavigationBar},
 	data() {
 		return {
 			transitionName: 'slide-left'
@@ -25,11 +29,11 @@ export default {
 /*全局字体样式*/
 body {
 	font-family: "SourceSansPro-Regular", "微软雅黑", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial,
-		sans-serif;
-}
-.container {
-	width: 1200px;
-	margin: 0 auto;
+	sans-serif;
 }
 
+.container {
+	width: 1300px;
+	margin: 0 auto;
+}
 </style>

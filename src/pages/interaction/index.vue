@@ -1,17 +1,12 @@
 <template>
 	<div>
-		<NavigationBar/>
+		<h1>interaction</h1>
 	</div>
 </template>
 
 <script>
-import NavigationBar from "@/components/navigation_bar";
 export default {
 	name: "InteractionPage",
-	components:{
-		NavigationBar
-	}
-
 }
 </script>
 

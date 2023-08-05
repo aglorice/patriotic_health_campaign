@@ -1,6 +1,5 @@
 <template>
 	<div class="app">
-		<NavigationBar/>
 		<div class="introduction">
 			<div class="content">
 				<p class="content_p">活动简介</p>
@@ -93,7 +92,6 @@
 </template>
 
 <script>
-import NavigationBar from "@/components/navigation_bar";
 export default {
 	name: 'ActivityIntroduction',
 	data() {
@@ -101,9 +99,6 @@ export default {
 
 		}
 	},
-	components:{
-		NavigationBar
-	}
 }
 </script>
 

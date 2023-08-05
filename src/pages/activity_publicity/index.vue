@@ -2,7 +2,6 @@
 	<!--活动宣传-->
 	<div>
 		<!--顶部导航栏-->
-		<NavigationBar/>
 		<ul class="nav">
 			<li><span @click="activeFlag = 0" :class="{active:activeFlag === 0}">个人卫生</span></li>
 			<li><span @click="activeFlag = 1" :class="{active:activeFlag === 1}">环境卫生</span></li>
@@ -16,8 +15,8 @@
 				<div class="container">
 					<!--简介-->
 					<div class="intro">
-						<img src="@/assets/temp/4.jpg" alt="个人卫生简介" class="toRight">
-						<div class="toLeft">
+						<img src="@/assets/temp/4.jpg" alt="个人卫生简介" class="wow toRight" data-wow-duration="3s">
+						<div class="wow toLeft" data-wow-duration="3s">
 							<h2>个人卫生简介</h2>
 							<p>
 								生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好，或者没有健康饮食。个人卫生是需要自己注意并长期保持的一项事宜。个人卫生的保持与否，也与你个人的身体健康息息相关。既然个人卫生如此重要，小编就简单说说我们要如何保持个人卫生。
@@ -25,70 +24,82 @@
 						</div>
 					</div>
 
+					<!--图片文字-->
 					<div class="cards">
 						<div class="card">
 							<div class="img">
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img src="@/assets/temp/11.jpg" alt="img">
 								</a>
 							</div>
-							<h3><a href="#">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
+							<h3><a href="javascript:void(0);">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
 						</div>
 						<div class="card">
 							<div class="img">
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img src="@/assets/temp/11.jpg" alt="img">
 								</a>
 							</div>
-							<h3><a href="#">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
+							<h3><a href="javascript:void(0);">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
 						</div>
 						<div class="card">
 							<div class="img">
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img src="@/assets/temp/11.jpg" alt="img">
 								</a>
 							</div>
-							<h3><a href="#">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
+							<h3><a href="javascript:void(0);">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
 						</div>
 						<div class="card">
 							<div class="img">
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img src="@/assets/temp/11.jpg" alt="img">
 								</a>
 							</div>
-							<h3><a href="#">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
+							<h3><a href="javascript:void(0);">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
 						</div>
 						<div class="card">
 							<div class="img">
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img src="@/assets/temp/11.jpg" alt="img">
 								</a>
 							</div>
-							<h3><a href="#">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
+							<h3><a href="javascript:void(0);">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
 						</div>
 						<div class="card">
 							<div class="img">
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img src="@/assets/temp/11.jpg" alt="img">
 								</a>
 							</div>
-							<h3><a href="#">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
+							<h3><a href="javascript:void(0);">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
 						</div>
 						<div class="card">
 							<div class="img">
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img src="@/assets/temp/11.jpg" alt="img">
 								</a>
 							</div>
-							<h3><a href="#">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
+							<h3><a href="javascript:void(0);">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
 						</div>
 						<div class="card">
 							<div class="img">
-								<a href="#">
+								<a href="javascript:void(0);">
 									<img src="@/assets/temp/11.jpg" alt="img">
 								</a>
 							</div>
-							<h3><a href="#">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
+							<h3><a href="javascript:void(0);">生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好</a></h3>
+						</div>
+					</div>
+
+					<!--视频-->
+					<div class="video">
+						<video src="@/assets/temp/test.mp4" controls class="wow toRight" data-wow-duration="3s" />
+						<div class="wow toLeft" data-wow-duration="3s">
+							<h2>个人卫生简介</h2>
+							<p>
+								生活中，我们常常会生病，而很多疾病，其实就是因为你平时做的卫生不够好，或者没有健康饮食。个人卫生是需要自己注意并长期保持的一项事宜。个人卫生的保持与否，也与你个人的身体健康息息相关。既然个人卫生如此重要，小编就简单说说我们要如何保持个人卫生。
+							</p>
 						</div>
 					</div>
 				</div>
@@ -113,7 +124,8 @@
 </template>
 
 <script>
-import NavigationBar from '@/components/navigation_bar.vue'
+import {WOW} from 'wowjs';
+
 export default {
 	name: 'ActivityPublicity',
 	data() {
@@ -124,8 +136,8 @@ export default {
 			activeFlag: 0,
 		}
 	},
-	components: {
-		NavigationBar
+	mounted() {
+		new WOW().init();
 	}
 }
 </script>
@@ -145,6 +157,7 @@ ul {
 	/*使导航栏居中*/
 	display: flex;
 	justify-content: center;
+	margin-top: 8vh;
 }
 
 .nav li {
@@ -184,7 +197,7 @@ ul {
 
 /*设置内容区与顶部导航栏的距离*/
 .content {
-	margin-top: 30px;
+	margin-top: 1vh;
 
 	/*防止横向动画产生横向滚动条*/
 	overflow: hidden;
@@ -279,6 +292,26 @@ ul {
 	color: #01763a;
 }
 
+.video {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.video video {
+	width: 45vw;
+	border-radius: 10px;
+}
+
+.video div {
+	width: 45vw;
+	height: 50vh;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+}
+
 @keyframes toRight {
 	from {
 		opacity: 0;
@@ -287,13 +320,12 @@ ul {
 
 	to {
 		opacity: 1;
-		transform: translateX(10%);
 	}
 }
 
 .toRight {
-	animation: toRight 3s;
-//animation-name: toRight;
+	//animation: toRight 3s;
+	animation-name: toRight;
 }
 
 @keyframes toLeft {
@@ -304,13 +336,12 @@ ul {
 
 	to {
 		opacity: 1;
-		transform: translateX(0);
 	}
 }
 
 .toLeft {
-	animation: toLeft 3s;
-//animation-name: toLeft;
+	//animation: toLeft 3s;
+	animation-name: toLeft;
 }
 
 @keyframes toDown {
@@ -321,12 +352,11 @@ ul {
 
 	to {
 		opacity: 1;
-		transform: translateY(0);
 	}
 }
 
 .toDown {
-	animation: toDown 3s;
-//animation-name: toDown;
+	//animation: toDown 3s;
+	animation-name: toDown;
 }
 </style>
