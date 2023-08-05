@@ -15,7 +15,7 @@
 					<div class="details_box_content">
 						<div class="left">
 							<h1>详细介绍</h1>
-							<p></p>
+							<h4>动员起来，讲究卫生，减少疾病，提高健康水平，粉碎敌人的细菌战争<span> ---毛泽东</span></h4>
 							<p>爱国卫生运动（Patriotic Health Movement）是中国共产党把群众路线运用于卫生防病工作的成功实践。中国共产党在领导人民革命实践中，十分重视开展群众的卫生运动，以预防和减少疾病，保护人民健康。</p>
 							<p>爱国卫生运动，是中国卫生工作的伟大创举，反映了中国卫生工作的鲜明特色。
 
@@ -140,6 +140,7 @@ export default {
 	letter-spacing: 0.4em;
 	font-weight: lighter;
 	margin-bottom: 40px;
+	padding-bottom: 10px;
 }
 .time_line p {
 	font-size: 1em;
@@ -151,6 +152,7 @@ export default {
 /*详细介绍*/
 .details_box {
 	margin-top: 40px;
+	border-bottom: 1px salmon solid;
 }
 
 .details_content {
@@ -168,12 +170,27 @@ export default {
 }
 .left h1 {
 	font-weight: normal;
+	letter-spacing: 0.2em;
+}
+.left h4 span {
+	font-size: 1em;
+	letter-spacing: 0.2em;
+	font-weight: lighter;
+}
+.left h1::after {
+	content: "";
+	display: block;
+	width: 5em;
+	height: 4px;
+	background: #ff0000;
+	margin: 12px 0;
 }
 .left p {
 	font-size: 1em;
 	letter-spacing: 0.2em;
 	font-weight: lighter;
 	text-indent: 2em;
+	line-height: 2em;
 }
 .details_box_content {
 	display: flex;
