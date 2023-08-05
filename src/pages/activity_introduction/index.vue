@@ -126,8 +126,8 @@ export default {
 	margin-bottom: 20px;
 	padding-bottom: 10px;
 	padding-left: 10px;
-	border-bottom: 2px solid #ffffff;
-	border-left: 15px solid #f67373;
+	border-bottom: 2px solid #ff0000;
+	border-left: 15px solid #ff0000;
 }
 .time_line {
 	/*transform: translate(50%, 0);    !* 50%为自身尺寸的一半 *!*/
