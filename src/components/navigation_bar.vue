@@ -96,8 +96,8 @@ export default {
 }
 
 .logo img {
-	width: 6vh;
-	height: 6vh;
+	width: 5vh;
+	height: 5vh;
 	margin-top: 1vh;
 	margin-left: 100px;
 }
