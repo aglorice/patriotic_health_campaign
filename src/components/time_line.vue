@@ -132,6 +132,7 @@ div {
 	box-shadow: 8px 7px 20px 0px #dae5f6;
 	border-radius: 4px;
 	position: relative;
+	border-top: 3px red solid;
 }
 .item:nth-child(even) {
 	background: #ffffff;
