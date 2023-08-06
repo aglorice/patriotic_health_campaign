@@ -4,15 +4,17 @@
 		<transition :name="transitionName" mode="out-in">
 			<router-view></router-view>
 		</transition>
+		<Footer v-show="$route.path !== '/'" />
 	</div>
 </template>
 
 <script>
 import NavigationBar from "@/components/navigation_bar.vue";
+import Footer from "@/components/footer.vue";
 
 export default {
 	name: 'App',
-	components: {NavigationBar},
+	components: {NavigationBar, Footer},
 	data() {
 		return {
 			transitionName: 'slide-left'

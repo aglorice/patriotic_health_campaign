@@ -1,6 +1,5 @@
 <template>
 	<div class="app">
-		<NavigationBar/>
 		<div class="introduction">
 			<div class="content">
 				<p class="content_p">活动简介</p>
@@ -69,14 +68,11 @@
 
 			</div>
 		</div>
-		<FooterPage/>
 	</div>
 </template>
 
 <script>
-import NavigationBar from "@/components/navigation_bar";
 import TimeLine from "@/components/time_line";
-import FooterPage from "@/components/footer";
 
 export default {
 	name: 'ActivityIntroduction',
@@ -119,9 +115,7 @@ export default {
 		}
 	},
 	components: {
-		NavigationBar,
 		TimeLine,
-		FooterPage
 	}
 }
 </script>
