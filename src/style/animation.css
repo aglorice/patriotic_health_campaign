@@ -3,18 +3,66 @@
   页面进入的动画
 */
 .slide-left-enter {
-    opacity: 0;
-    -webkit-transform: translate(0px, 30px);
-    transform: translate(0px, 30px);
+	opacity: 0;
+	-webkit-transform: translate(0px, 30px);
+	transform: translate(0px, 30px);
 }
-.slide-left-enter-active{
-    transition: all .5s ease;
+
+.slide-left-enter-active {
+	transition: all .5s ease;
 }
-.slide-left-leave-to{
-    opacity: 0;
-    -webkit-transform: translate(0px, -30px);
-    transform: translate(0px, -30px);
+
+.slide-left-leave-to {
+	opacity: 0;
+	-webkit-transform: translate(0px, -30px);
+	transform: translate(0px, -30px);
 }
+
 .slide-left-leave-active {
-    transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+@keyframes toRight {
+	from {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.toRight {
+	animation-name: toRight;
+}
+
+@keyframes toLeft {
+	from {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.toLeft {
+	animation-name: toLeft;
+}
+
+@keyframes toDown {
+	from {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.toDown {
+	animation-name: toDown;
 }

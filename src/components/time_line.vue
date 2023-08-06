@@ -3,7 +3,7 @@
 		<div class="items">
 			<template v-for="(item, index) in timeDataList">
 				<div :key="index" class="itembox">
-					<div class="item">
+					<div class="item wow" :class="index % 2 === 0 ? 'toRight' : 'toLeft'" data-wow-duration="3s">
 						<div class="line">
 							<div class="gardenbox">
 								<div class="garden">
@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import {WOW} from 'wowjs';
+
 export default {
 	name: 'TimeLine',
 	props: {
@@ -54,10 +56,17 @@ export default {
 			},
 		},
 	},
+	mounted() {
+		new WOW({
+			live: false
+		}).init();
+	}
 }
 </script>
 
 <style scoped>
+@import "@/style/animation.css";
+
 div {
 	box-sizing: border-box;
 }
