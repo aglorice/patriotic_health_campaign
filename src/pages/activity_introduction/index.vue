@@ -288,6 +288,7 @@ export default {
 }
 
 .man_content {
+	padding-bottom: 50px;
 	min-width: 80vw;
 	margin: auto 0;
 	display: flex;
