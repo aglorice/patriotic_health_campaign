@@ -1,26 +1,101 @@
 <template>
 	<div class='footer'>
-		<span class="scroll"></span>
-		<!-- <span id="star-five" class="scroll"></span> -->
-		<el-divider></el-divider>
-		<span>法律声明</span>
-		<el-divider direction="vertical"></el-divider>
-		<span>友情链接</span>
-		<el-divider direction="vertical"></el-divider>
-		<span @click="drawer = true">联系我</span>
-		<br/>
-		<br/>
-		<span class="copyright">版权所有 JEmbrace</span>
-		<el-drawer
-				title="联系我"
-				:visible.sync="drawer"
-				:direction="direction"
-				:before-close="handleClose">
-			<p class='info'>
-				<i class="el-icon-phone"></i>电话：18822299999<br/>
-				<i class="el-icon-message"></i>邮箱：18822299999@163.com<br/>
-			</p>
-		</el-drawer>
+		<ul class="navigation_ul">
+			<li class="li">
+				<router-link to="/home">主页</router-link>
+			</li>
+			<li class="li">
+				<router-link to="/activity_introduction">活动介绍</router-link>
+			</li>
+			<li class="li">
+				<router-link to="/activity_publicity">活动宣传
+				</router-link>
+			</li>
+			<li class="li">
+				<router-link to="/interaction">互动交流</router-link>
+			</li>
+			<li class="li">
+				<router-link to="/results_show">成果展示</router-link>
+			</li>
+		</ul>
+		<div class="footer_mid">
+			<div class="footer_img">
+				<img src="@/assets/background/introduction.jpg" alt="">
+			</div>
+			<div class="footer_box">
+				<div class="footer_box_1">
+					<h4 class="footer_title">活动宣传</h4>
+					<ul class="footer_ul">
+						<li class="_li">
+							<router-link to="/activity_publicity/personal_hygiene">个人卫生</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/environmental_hygiene">环境卫生</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/food_safety">食品安全</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/disease_prevention">疾病预防</router-link>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_box_2">
+					<h4 class="footer_title">活动宣传</h4>
+					<ul class="footer_ul">
+						<li class="_li">
+							<router-link to="/activity_publicity/personal_hygiene">个人卫生</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/environmental_hygiene">环境卫生</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/food_safety">食品安全</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/disease_prevention">疾病预防</router-link>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_box_2">
+					<h4 class="footer_title">活动宣传</h4>
+					<ul class="footer_ul">
+						<li class="_li">
+							<router-link to="/activity_publicity/personal_hygiene">个人卫生</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/environmental_hygiene">环境卫生</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/food_safety">食品安全</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/disease_prevention">疾病预防</router-link>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_box_2">
+					<h4 class="footer_title">活动宣传</h4>
+					<ul class="footer_ul">
+						<li class="_li">
+							<router-link to="/activity_publicity/personal_hygiene">个人卫生</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/environmental_hygiene">环境卫生</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/food_safety">食品安全</router-link>
+						</li>
+						<li class="_li">
+							<router-link to="/activity_publicity/disease_prevention">疾病预防</router-link>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<p>Copyright © 2023 by aglorice. All Rights Reserved.</p>
+		</div>
 	</div>
 </template>
 
@@ -31,52 +106,124 @@ export default {
 </script>
 
 <style scoped>
-.footer{
-	height: 150px;
+.footer {
+	height: 300px;
 	text-align: center;
 	font-size: 16px;
 	padding: 0px 100px;
 	position: relative;
-	background-color: #d0d0d0;
+	background-color: #e1e0e0;
 }
-.footer{
+
+.footer {
 	cursor: pointer;
 }
-.copyright{
-	font-size: 12px;
+
+.navigation_ul {
+	list-style: none;
+	padding-top: 30px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
-.info{
-	font-size: 14px;
-	color: #72767b;
-	line-height: 25px;
+.navigation_ul::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin-top: 10px;
+	background-color: red;
 }
-.footer .scroll{
+
+.li {
+	padding: 0px 20px;
+}
+
+.li a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bolder;
+	letter-spacing: 0.2em;
+}
+
+.li a:hover {
+	color: #790404;
+}
+
+.li:nth-child(n+2)::before {
+	content: "";
 	display: inline-block;
-	width: 20px;
-	height: 20px;
-	border-radius: 5px;
-	border:2px solid #eaeaea;
-	/* background-color: rgba(216, 16, 109,0.6); */
-	position: absolute;
-	left: 5%;
-	top: -25px;
-	z-index: 10;
-	animation: scrollA infinite 20s linear alternate;
+	margin-right: 36px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #790404;
 }
-@keyframes scrollA {
-	0% {left: 5%;transform: rotate(180deg);}
-10% {left: 5%;transform: rotate(270deg);}
-20% {left: 5%;transform: rotate(450deg);}
-25% {left: 10%;transform: rotate(540deg);}
-30% {left: 20%;transform: rotate(720deg);}
-35% {left: 30%;transform: rotate(900deg);}
-40% {left: 40%;transform: rotate(1080deg);}
-45% {left: 50%;transform: rotate(1260deg);}
-50% {left: 60%;transform: rotate(1440deg);}
-55% {left: 70%;transform: rotate(1620deg);}
-60% {left: 80%;transform: rotate(1800deg);}
-80% {left: 90%;transform: rotate(2610deg);}
-90% {left: 90%;transform: rotate(2340deg);}
-100% {left: 90%;transform: rotate(2520deg);}
+.footer_mid {
+	transform: translateY(30px);
+	margin: 0 auto;
+	max-width: 70%;
+	display: flex;
+}
+.footer_box {
+	display: flex;
+	flex: 7;
+}
+.footer_box_1 {
+	flex: 1;
+}
+.footer_box_2 {
+	flex: 1;
+}
+.footer_img {
+	flex: 2;
+}
+.footer_img  img{
+	width: 200px;
+}
+.footer_ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+._li a{
+	color: #000000;
+	text-decoration: none;
+	font-size: 14px;
+	letter-spacing: 0.2em;
+}
+._li a:hover {
+	color: #790404;
+}
+._li a::before {
+	content: "";
+	display: inline-block;
+	margin-right: 10px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #6e0000;
+}
+._li {
+	margin: 6px 0px;
+}
+.footer_title {
+	font-size: 15px;
+	letter-spacing: 0.1em;
+	margin: 0 0 4px;
+}
+.footer_bottom {
+	position: absolute;
+	width: calc(100% - 200px);
+	bottom: 0;
+}
+.footer_bottom p {
+	font-size: 12px;
+	color: #000000;
+	margin: 0;
+	padding: 10px 0px;
 }
 </style>
