@@ -295,12 +295,15 @@ export default {
 	flex: 1;
 	display: flex;
 	padding: 20px;
+	border: 3px #960505 solid;
+	border-right: 0;
 }
 
 .right_man {
 	flex: 1;
 	display: flex;
 	padding: 20px;
+	border: 3px #960505 solid;
 }
 ._man_box h1{
 	letter-spacing: 0.3em;
