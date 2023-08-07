@@ -2,6 +2,10 @@
 	<div id="navigation" class="navigation_bar">
 		<div class="logo">
 			<img src="@/assets/logo.png" alt="">
+			<div class="logo_title">
+				<p class="p1">爱国卫生运动</p>
+				<p class="p2">Patriotic health movement</p>
+			</div>
 		</div>
 		<ul class="navigation_ul">
 			<li class="li">
@@ -88,17 +92,21 @@ export default {
 	display: flex;
 	width: 100%;
 	height: 8vh;
+	background-color: white;
 }
 
 .logo {
 	flex: 3;
+	position: relative;
+	display: flex;
+	align-items: center;
 }
 
 .logo img {
 	width: 5vh;
 	height: 5vh;
 	margin-top: 1vh;
-	margin-left: 100px;
+	transform: translateX(40px);
 }
 
 .navigation_ul {
@@ -119,8 +127,8 @@ export default {
 	height: 39.3px;
 	text-decoration: none;
 	line-height: 39.3px;
-	color: #ffffff;
-	font-weight: bolder;
+	color: #000000;
+	font-weight: normal;
 	letter-spacing: 0.2em;
 	transition: 0.8s;
 	display: inline-block;
@@ -186,5 +194,36 @@ export default {
 	margin-left: 4px;
 	width: 20px;
 	height: 20px;
+}
+.logo_title {
+	flex: 3;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	right: calc(100% - 270px);
+	transform: translateY(3px);
+}
+
+.p1 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: bolder;
+	letter-spacing: 0.1em;
+}
+.p2 {
+	font-size: 0.3em;
+	margin: 10px 0 0;
+	font-weight: normal;
+	color: #333333;
+}
+.active {
+	background: #b20404;
+	border-radius: 2px;
+	box-shadow: 7px -7px 0px 0px #790303;
+	color: white!important;
+}
+.active a:hover {
+	color: #ffffff;
 }
 </style>
