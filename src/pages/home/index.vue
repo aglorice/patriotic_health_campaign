@@ -16,8 +16,9 @@ export default {
 	data(){
 		return{
 			images:[
-					"https://aglorice.cn/img/index.97db8b1b.png",
-					"https://aglorice.cn/img/category.629a2b54.png",
+				require("@/assets/background/1.png"),
+				require("@/assets/background/details.png"),
+				require("@/assets/background/introduction.jpg"),
 			]
 		}
 	},
@@ -29,7 +30,7 @@ export default {
 
 <style scoped>
 .swiper_home {
-	width: 100vw;
-	height: 80vh;
+	width: 100%;
+	height: 100vh;
 }
 </style>
