@@ -198,15 +198,15 @@ export default {
 ._li a:hover {
 	color: #790404;
 }
-._li a::before {
-	content: "";
-	display: inline-block;
-	margin-right: 10px;
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-	background-color: #6e0000;
-}
+/*._li a::before {*/
+/*	content: "";*/
+/*	display: inline-block;*/
+/*	margin-right: 10px;*/
+/*	width: 5px;*/
+/*	height: 5px;*/
+/*	border-radius: 50%;*/
+/*	background-color: #6e0000;*/
+/*}*/
 ._li {
 	margin: 6px 0px;
 }
