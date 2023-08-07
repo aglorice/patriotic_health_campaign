@@ -66,13 +66,13 @@ export default {
 	height: 100%;
 	z-index: 0;
 	/*修改导航和分页器的颜色*/
-	--swiper-theme-color: #2bccc7;
+	--swiper-theme-color: #910303;
 }
 
 .swiper-slide {
 	text-align: center;
 	line-height: 400px;
-	color: #b0b0b0;
+	color: #ffffff;
 }
 .swiper-img {
 	width: 100%;
