@@ -132,9 +132,9 @@ export default {
 	content: "";
 	display: block;
 	width: 100%;
-	height: 1px;
+	height: 2px;
 	margin-top: 10px;
-	background-color: red;
+	background-color: #bd0000;
 }
 
 .li {
