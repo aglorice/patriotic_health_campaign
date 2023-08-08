@@ -46,13 +46,18 @@ export default {
 	font-size: 14px;
 	letter-spacing: 3px;
 	color: #c00000;
-	left: 50%;
+	left: 0;
 	transform: translateX(-50%);
 }
 .left {
 	left: 20%;
+	transform: translateX(0);
 }
 .right {
 	right: 20%;
+	transform: translateX(0);
+}
+.center {
+	left: 50%;
 }
 </style>
