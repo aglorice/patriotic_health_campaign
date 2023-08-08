@@ -45,6 +45,7 @@ export default {
 	padding: 0 10px;
 	font-size: 14px;
 	letter-spacing: 3px;
+	color: #c00000;
 }
 .left {
 	left: calc(20% - 44px);
