@@ -3,8 +3,12 @@
 		<div class="swiper_home">
 			<CarouselImg :images="images" />
 		</div>
-		<div>
-			<h1>我是首页</h1>
+		<div class="mid_box">
+			<div class="xs_box">
+				<div class="xs_box_content">
+
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
