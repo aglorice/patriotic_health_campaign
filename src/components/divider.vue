@@ -46,7 +46,6 @@ export default {
 	font-size: 14px;
 	letter-spacing: 3px;
 	color: #c00000;
-	left: 0;
 	transform: translateX(-50%);
 }
 .left {
