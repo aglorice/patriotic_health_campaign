@@ -297,6 +297,7 @@ export default {
 	padding: 20px;
 	border: 3px #960505 solid;
 	border-right: 0;
+	margin-left: 20px;
 }
 
 .right_man {
@@ -304,6 +305,7 @@ export default {
 	display: flex;
 	padding: 20px;
 	border: 3px #960505 solid;
+	margin-right: 20px;
 }
 ._man_box h1{
 	letter-spacing: 0.3em;
