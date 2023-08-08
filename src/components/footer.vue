@@ -18,6 +18,7 @@
 				<router-link to="/results_show">成果展示</router-link>
 			</li>
 		</ul>
+		<DividerComponent contentPosition="center" />
 		<div class="footer_mid">
 			<div class="footer_img">
 				<img src="@/assets/background/introduction.jpg" alt="">
@@ -100,8 +101,10 @@
 </template>
 
 <script>
+import DividerComponent from "@/components/divider";
 export default {
-	name: "FooterPage"
+	name: "FooterPage",
+	components: {DividerComponent}
 }
 </script>
 
@@ -127,14 +130,6 @@ export default {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-}
-.navigation_ul::after {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 2px;
-	margin-top: 10px;
-	background-color: #bd0000;
 }
 
 .li {
