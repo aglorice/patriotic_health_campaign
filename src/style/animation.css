@@ -25,7 +25,7 @@
 @keyframes toRight {
 	from {
 		opacity: 0;
-		transform: translateX(-200px);
+		transform: translateX(-100%);
 	}
 
 	to {
@@ -40,7 +40,7 @@
 @keyframes toLeft {
 	from {
 		opacity: 0;
-		transform: translateX(200px);
+		transform: translateX(100%);
 	}
 
 	to {
@@ -55,7 +55,7 @@
 @keyframes toDown {
 	from {
 		opacity: 0;
-		transform: translateY(-200px);
+		transform: translateY(-100%);
 	}
 
 	to {
