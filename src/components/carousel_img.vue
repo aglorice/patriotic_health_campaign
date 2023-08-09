@@ -33,7 +33,9 @@ export default {
 			},
 			//滚动一张或者切换一张图片，需要的时间，单位ms，默认300ms
 			// speed: 800,
+
 			// effect: 'cards',
+
 			// 如果需要分页器
 			pagination: {
 				el: '.swiper-pagination',
@@ -85,6 +87,7 @@ export default {
 	/* 让背景图基于容器大小伸缩 */
 	background-size: cover;
 }
+
 /*导航显示与隐藏动画*/
 .swiper-button-hide {
 	opacity: 0;

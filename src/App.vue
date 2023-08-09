@@ -32,10 +32,8 @@ export default {
 body {
 	font-family: "SourceSansPro-Regular", "微软雅黑", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial,
 	sans-serif;
-}
 
-.container {
-	width: 1300px;
-	margin: 0 auto;
+	/*防止左右动画产生横向滚动条*/
+	overflow-x: hidden;
 }
 </style>
