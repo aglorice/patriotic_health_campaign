@@ -40,7 +40,7 @@ export default {
 }
 .divider_content {
 	position: absolute;
-	top: -10px;
+	top: calc(50% - 9px);
 	background-color: #ffffff;
 	padding: 0 10px;
 	font-size: 14px;
