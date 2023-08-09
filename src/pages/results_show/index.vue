@@ -81,8 +81,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="">
-
+			<DividerComponent><img class="video_icon" src="@/assets/icon/Video.png" alt=""></DividerComponent>
+			<div class="show_video">
+				<div class="video_title">
+					<h1>展示视频</h1>
+				</div>
+				<div class="video_container">
+					<VideoPage
+							videoSrc="https://v17.dogevideo.com/vcloud/17/v/20190424/1556036075_818c4125ec9c8cbc7a7a8a7cc1601512/1037/7d515b22c4958598c0fbd1e6290a5ca5.mp4?vkey=DA8EF1&tkey=169154893267bd778138&auth_key=1691563332-8yTXzvy4ifUdqKv2-0-b6fbd2fabd7f615067b85fa85b8ae313"></VideoPage>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -91,6 +98,7 @@
 <script>
 import CarouselImg from "@/components/carousel_img";
 import DividerComponent from "@/components/divider";
+import VideoPage from "@/components/video";
 
 export default {
 	name: "ResultsShow",
@@ -105,6 +113,7 @@ export default {
 		}
 	},
 	components: {
+		VideoPage,
 		DividerComponent,
 		CarouselImg
 	},
@@ -219,4 +228,27 @@ export default {
 	line-height: 2em;
 }
 
+.show_video {
+	margin-bottom: 60px;
+}
+
+.video_container {
+	max-width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.video_title {
+	text-align: center;
+}
+
+.video_title h1 {
+	font-size: 2em;
+	letter-spacing: 0.2em;
+	font-weight: normal;
+	margin: 0 0 30px;
+}
+.video_icon {
+	width: 20px;
+}
 </style>
