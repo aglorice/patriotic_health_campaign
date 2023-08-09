@@ -14,6 +14,9 @@ export default {
 			video: {
 				url: this.videoSrc
 			},
+			preload: 'auto',
+			theme: '#a80404',
+			loop: true,
 		});
 	}
 }
