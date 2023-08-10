@@ -22,8 +22,6 @@ import {LabelLayout, UniversalTransition} from 'echarts/features';
 // 引入 Canvas 渲染器，注意引入 CanvasRenderer 或者 SVGRenderer 是必须的一步
 import {CanvasRenderer} from 'echarts/renderers';
 
-console.log('测试');
-
 // 注册必须的组件
 echarts.use([
 	TitleComponent,
@@ -55,7 +53,12 @@ export default {
 		let option = {
 			/* 图表名称 */
 			title: {
-				text: '方案投票'
+				show: true,
+				text: '方案投票',
+
+				/* 设置标题位置 */
+				left: 'center',
+				top: 'bottom',
 			},
 
 			/* 鼠标悬浮提示 */
@@ -68,18 +71,56 @@ export default {
 
 			/* x轴 */
 			xAxis: {
+				type: "category",
 				data: this.name
 			},
 
 			/* y轴 */
-			yAxis: {},
+			yAxis: {
+				type: "value"
+			},
 
 			/* 数据 */
 			series: [
 				{
 					name: '当前票数',
 					type: 'bar',
-					data: this.value
+					data: this.value,
+
+					/* 设置柱状图样式 */
+					itemStyle: {
+						/* 柱条颜色 */
+						color: '#b41c02',
+
+						/* 边框圆角 */
+						barBorderRadius: 5,
+
+						/* 边框宽度 */
+						// borderWidth: 1,
+
+						/* 边框类型(实线、虚线) */
+						// borderType: 'solid',
+
+						/* 边框颜色 */
+						// borderColor: '#ff0000',
+
+						/* 阴影模糊大小 */
+						shadowBlur: 3,
+
+						/* 阴影颜色 */
+						shadowColor: '#000000',
+
+						/* 阴影水平偏移量 */
+						// shadowOffsetX: 0,
+
+						/* 阴影垂直偏移量 */
+						// shadowOffsetY: 0,
+
+						/* 透明度 */
+						// opacity: 0.7,
+
+
+					}
 				}
 			]
 		};
